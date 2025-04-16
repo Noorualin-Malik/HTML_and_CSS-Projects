@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(227, 167, 167);
+        }
+        .cards{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            max-width: 250px;
+            max-height: 800px;
+            /* border: 2px solid black; */
+            text-align: start;
+            border-radius: 10px;
+            margin: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.637);
+        }
+        .card .content{
+            padding: 0px 10px;
+            margin: 0px;
+        }
+        .card button{
+            background: pink;
+            border-radius: 8px;
+            height: 27px;
+            width: 80px;
+            border: none;
+            margin: 5px 10px;
+            cursor: pointer;
+            /* transition: opacity 0.5s ease-in-out; */
+        }
+        .card button:hover{
+            color: white;
+            background: purple;
+            transition: 0.8s linear;
+        }
+        .card p{
+            font-size: 10px;
+            margin: 5px 0px;
+        }
+        .card img {
+            width: 250px;
+            height: 150px;
+            border-radius: 7px 7px 0px 0px;
+        }
+        .image{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .image img{
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            margin: 20px 0px 5px 10px;
+        }
+        .image h6{
+            font-size: 13px;
+        }
+        .imgage h6 span{
+            font-size: 60px;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+    <div class="card card1">
+        <img src="tech.jpg" alt="">
+        <button>Technology</button>
+        <div class="content">
+        <h3>What's New in 2022 Tech</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde magnam distinctio omnis earum corrupti exercitationem rem fuga quo ratione fugit qui vitae, soluta est voluptatum facilis labore aperiam amet nemo.</p>
+    </div>
+    <div class="image">
+        <img src="anime-girl-phone-ruomh3zj1fby8g2d.jpg" alt="">
+        <h6>Jane Doe <br> <span>Technology</span></h6><br>
+    </div>
+    </div>
+    <div class="card card2">
+        
+        <img src="food.jpg" alt="">
+        <button>Food</button>
+        <div class="content">
+        <h3>Delecious Food</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde magnam distinctio omnis earum corrupti exercitationem rem fuga quo ratione fugit qui vitae, soluta est voluptatum facilis labore aperiam amet nemo.</p></div>
+        <div class="image">
+            <img src="anime-girl-phone-ruomh3zj1fby8g2d.jpg" alt="">
+            <h6>Jane Doe <br> <span>Technology</span></h6><br>
+        </div>
+    </div>
+</div>
+</body>
+</html>
