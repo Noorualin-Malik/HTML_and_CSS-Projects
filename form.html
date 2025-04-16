@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      body {
+        background-color: #574f7d;
+      }
+      .form {
+        min-height: 700px;
+        max-width: 450px;
+        /* border: 2px solid black; */
+        box-shadow: 0px 0px 10px black;
+        margin: auto;
+        padding: 20px;
+        background-color: #edd2cb;
+      }
+      .form .software {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        border-bottom: 1px solid grey;
+        font-size: 25px;
+      }
+      .form .input {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        /* display: inline-block; */
+      }
+      .input i {
+        position: absolute;
+        top: 70%;
+        right: 10px; /* Adjust icon position */
+        transform: translateY(-50%);
+        color: gray;
+        font-size: 18px;
+      }
+      .form .input label {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .form .input input {
+        height: 25px;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 5px;
+        border: 1px solid black;
+        background-color: transparent;
+      }
+      .input label span{
+        color: red;
+      }
+      .checkboxes,
+      .radios {
+        display: flex;
+        flex-direction: column;
+      }
+      .checkboxes label,
+      .radios label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .checkboxes label span,
+      .radios label span {
+        font-weight: 350;
+        font-size: 20px;
+      }
+      .checkboxes input,
+      .radios input {
+        width: 16px;
+        height: 16px;
+      }
+      button {
+        background: #574f7d;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        font-size: 1rem;
+        border-radius: 5px;
+      }
+      button:hover {
+        background: #691f1b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <div class="software"><h2>Software Request</h2></div>
+
+      <div class="input">
+        <i class="fa fa-user"></i>
+        <label for="name">Name <span>*</span></label>
+        <input type="text" placeholder="Enter Your Name" />
+      </div>
+
+      <div class="input">
+        <i class="fa-solid fa-id-card-clip"></i>
+        <label for="employee">Employee ID <span>*</span></label>
+        <input type="text" name="" id="" placeholder="Enter Your ID" />
+      </div>
+
+      <div class="input">
+        <i class="fa-solid fa-envelope"></i>
+        <label for="email">E-mail <span>*</span></label>
+        <input type="email" placeholder="Enter Your E-mail" />
+      </div>
+
+      <div class="input">
+        <i class="fa-solid fa-phone"></i>
+        <label for="number">Mobile No/Extn.No</label>
+        <input type="number" placeholder="Enter Your Number" />
+      </div>
+
+      <div class="input checkboxes">
+        <label for="question1">Which software do you require?</label>
+        <label
+          ><input type="checkbox" name="software" value="A" />Software A</label
+        >
+        <label
+          ><input type="checkbox" name="software" value="B" />Software B</label
+        >
+        <label
+          ><input type="checkbox" name="software" value="C" />Software C</label
+        >
+      </div>
+
+      <div class="input radios">
+        <label for="question1">How Urgently do you need it?</label>
+        <label
+          ><input type="radio" name="time" value="B" /><p>As soon as Possible</p></label
+        >
+        <label
+          ><input type="radio" name="time" value="C" />Within in 2 to 3 weeks</label
+        >
+        <label
+          ><input type="radio" name="time" value="A" />I'm in no hurry</label
+        >
+      </div>
+
+      <button type="submit">Request</button>
+    </div>
+  </body>
+</html>
